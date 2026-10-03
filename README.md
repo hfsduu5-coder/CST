@@ -1,5 +1,3 @@
-<p align="center"><img src="assets/cyberiq-logo.svg" width="86" alt="CyberIQ logo">&nbsp;&nbsp;<strong>CyberIQ</strong></p>
-
 # CyberIQ
 
 A responsive web experience for **CyberIQ**, built with a dark cybersecurity-inspired visual identity.
@@ -35,6 +33,10 @@ No package manager or build process is required.
 ## Purpose
 
 Created as part of CyberIQ's student-focused technical and cybersecurity activities.
+## Project Status
+
+This repository is maintained as part of my public cybersecurity and software-engineering portfolio. Development focuses on clear documentation, reproducible local workflows, defensive/educational use, and evidence-backed claims. CyberIQ branding uses the official team identity only when the official asset is available; placeholder logo artwork is not presented as official.
+
 ## 👤 Developer
 
 **مقتدى الصدر جارالله خليف — Muqtada Al-Sadr Jarallah Khalif**  

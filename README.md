@@ -1,10 +1,12 @@
-# Cyber Team
+<p align="center"><img src="assets/cyberiq-logo.svg" width="86" alt="CyberIQ logo">&nbsp;&nbsp;<strong>CyberIQ</strong></p>
 
-A responsive web experience for **Cyber Team**, built with a dark cybersecurity-inspired visual identity.
+# CyberIQ
+
+A responsive web experience for **CyberIQ**, built with a dark cybersecurity-inspired visual identity.
 
 ## Overview
 
-This project provides an interactive Cyber Team web interface with Arabic RTL support, animated cyber visuals, and integrated QR-code functionality.
+This project provides an interactive CyberIQ web interface with Arabic RTL support, animated cyber visuals, and integrated QR-code functionality.
 
 ## Features
 
@@ -12,7 +14,7 @@ This project provides an interactive Cyber Team web interface with Arabic RTL su
 - Responsive interface
 - Animated cybersecurity-themed background
 - QR code generation support
-- Dark maroon/navy Cyber Team design
+- Dark maroon/navy CyberIQ design
 - Single-page browser experience
 
 ## Tech Stack
@@ -32,4 +34,4 @@ No package manager or build process is required.
 
 ## Purpose
 
-Created as part of Cyber Team's student-focused technical and cybersecurity activities.
+Created as part of CyberIQ's student-focused technical and cybersecurity activities.

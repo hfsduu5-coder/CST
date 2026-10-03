@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Cyber Team</title>
+<title>Cyber Team</title>\n<meta name="description" content="CyberIQ student cybersecurity learning hub and workshop directory.">\n<meta name="color-scheme" content="dark">\n<meta property="og:title" content="CyberIQ Security Hub">\n<meta property="og:description" content="Student cybersecurity learning hub, workshops, CTF resources and educational paths.">\n<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -25,7 +25,7 @@
   --glow-n:0 0 25px rgba(26,48,104,0.6);
 }
 
-*{box-sizing:border-box;margin:0;padding:0;}
+*{box-sizing:border-box;margin:0;padding:0;}\n.skip-link{position:absolute;top:-60px;right:16px;z-index:2000;background:#fff;color:#000;padding:10px 14px}.skip-link:focus{top:10px}a:focus-visible,button:focus-visible{outline:3px solid var(--maroon-glow);outline-offset:3px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 html{scroll-behavior:smooth;}
 
 body{
@@ -1068,7 +1068,7 @@ footer{
 .site-card.hidden{display:none!important;}
 </style>
 </head>
-<body>\n<a class="skip-link" href="#about">تخطي إلى المحتوى الرئيسي</a>
+<body>\n<a class="skip-link" href="#workshops">تخطي إلى المحتوى</a>\n<a class="skip-link" href="#about">تخطي إلى المحتوى الرئيسي</a>
 
 <!-- ANIMATED CANVAS BACKGROUND -->
 <canvas id="cyber-canvas"></canvas>
@@ -1581,8 +1581,8 @@ footer{
             <path d="M24 19C22 19 18 20 18 24V28" stroke="#c0182e" stroke-width="1.4" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c1">0</span>+</div>
-        <div class="stat-label">عضو نشط</div>
+        <div class="stat-num"><span id="c1">مجتمع</span></div>
+        <div class="stat-label">مجتمع تعلم</div>
         <div class="stat-sub">// active members</div>
       </div>
       <div class="stat-card">
@@ -1596,8 +1596,8 @@ footer{
             <line x1="7" y1="24" x2="29" y2="24" stroke="#c0182e" stroke-width="0.8" opacity="0.4"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c2">0</span></div>
-        <div class="stat-label">مواقع تعليمية</div>
+        <div class="stat-num"><span id="c2">تعلم</span></div>
+        <div class="stat-label">مصادر تعليمية</div>
         <div class="stat-sub">// websites</div>
       </div>
       <div class="stat-card">
@@ -1610,7 +1610,7 @@ footer{
             <circle cx="18" cy="9" r="2" fill="#c0182e"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c3">0</span></div>
+        <div class="stat-num"><span id="c3">ورش</span></div>
         <div class="stat-label">ورشة متخصصة</div>
         <div class="stat-sub">// workshops</div>
       </div>
@@ -1625,7 +1625,7 @@ footer{
             <line x1="14" y1="22" x2="20" y2="22" stroke="#c0182e" stroke-width="1" opacity="0.6"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c4">0</span>+</div>
+        <div class="stat-num"><span id="c4">محتوى</span></div>
         <div class="stat-label">كورس ومحتوى</div>
         <div class="stat-sub">// courses & content</div>
       </div>
@@ -1636,8 +1636,8 @@ footer{
             <polygon points="18,5 22,14 32,15 25,22 27,31 18,26 9,31 11,22 4,15 14,14" stroke="#c9a84c" stroke-width="1.4" fill="rgba(201,168,76,0.2)"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c5">0</span>/5</div>
-        <div class="stat-label">تقييم المستخدمين</div>
+        <div class="stat-num"><span id="c5">تعليمي</span></div>
+        <div class="stat-label">محتوى تعليمي</div>
         <div class="stat-sub">// user rating</div>
       </div>
       <div class="stat-card">
@@ -1650,7 +1650,7 @@ footer{
             <line x1="8" y1="30" x2="16" y2="30" stroke="#c0182e" stroke-width="1.2"/>
           </svg>
         </div>
-        <div class="stat-num"><span id="c6">0</span>+</div>
+        <div class="stat-num"><span id="c6">CTF</span></div>
         <div class="stat-label">تحدي CTF</div>
         <div class="stat-sub">// CTF challenges</div>
       </div>
@@ -1806,8 +1806,12 @@ function initNodes(){
 initNodes();
 
 let frame=0;
-function animate(){
+let lastCanvasFrame=0;const canvasInterval=1000/30;const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function animate(ts=0){
+  if(reduceMotion)return;
   requestAnimationFrame(animate);
+  if(document.hidden||ts-lastCanvasFrame<canvasInterval)return;
+  lastCanvasFrame=ts;
   ctx.clearRect(0,0,W,H);
   frame++;
 
@@ -1991,7 +1995,7 @@ if(document.getElementById("qr-workshop2")){
       hx.stroke();
     }
   }
-  animateHex();
+  if(!reduceMotion) animateHex();
 })();
 
 /* ====== SCROLL REVEAL ====== */

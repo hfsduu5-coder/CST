@@ -39,5 +39,5 @@ Created as part of CyberIQ's student-focused technical and cybersecurity activit
 
 **مقتدى الصدر جارالله خليف — Muqtada Al-Sadr Jarallah Khalif**  
 **الحنتوشي — Al-Hantooshi**  
-Developer • Team Leader & CEO of **CyberIQ**
+Developer • Team Leader of **CyberIQ**
 

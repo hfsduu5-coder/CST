@@ -35,3 +35,9 @@ No package manager or build process is required.
 ## Purpose
 
 Created as part of CyberIQ's student-focused technical and cybersecurity activities.
+## 👤 Developer
+
+**مقتدى الصدر جارالله خليف — Muqtada Al-Sadr Jarallah Khalif**  
+**الحنتوشي — Al-Hantooshi**  
+Developer • Team Leader & CEO of **CyberIQ**
+
